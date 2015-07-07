@@ -1,0 +1,13 @@
+<form action="/tasks/<%= @task.id %>" method="post">
+  <p>Edit</p>
+
+  <!-- this is sinatra specific, most browsers implement get and post-->
+  <input type="hidden" name="_method" value="PUT">
+
+  <label for="title">title</label>
+  <input type="text" name="task[title]" value="<%= @task.title %>">
+  <label for="description">description</label>
+  <textarea name="task[description]"><%= @task.description %></textarea>
+  <input type="submit" value="Update Task">
+
+</form>
