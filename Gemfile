@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'sinatra', require: 'sinatra/base'
-gem 'bundler'
+gem 'minitest'
 gem 'shotgun'
+gem 'pry'
