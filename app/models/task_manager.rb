@@ -34,7 +34,10 @@ class TaskManager
   end
 
   def self.find(id)
-    Task.new(raw_task(id))
+    task = raw_task(id)
+    return false if task.nil?
+
+    Task.new(task)
   end
 
   def self.update(id, task)

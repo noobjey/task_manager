@@ -10,5 +10,5 @@ class TaskTest < Minitest::Test
     assert_equal "a description", task.description
     assert_equal 1, task.id
   end
-  
+
 end
